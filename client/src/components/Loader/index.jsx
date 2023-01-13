@@ -1,1 +1,7 @@
-export const Loader = () => <h1>Loader</h1>;
+export const Loader = () => {
+  return (
+    <div className="flex justify-center items-center p-3">
+      <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-red-700" />
+    </div>
+  );
+};
