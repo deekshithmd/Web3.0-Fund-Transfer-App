@@ -30,6 +30,7 @@ export const Welcome = () => {
     setFormData,
     handleChange,
     sendTransaction,
+    loading,
   } = useTransaction();
 
   const handleSubmit = (e) => {
@@ -120,7 +121,7 @@ export const Welcome = () => {
               handleChange={handleChange}
             />
             <div className="h-[1px] w-full bg-gray-400" />
-            {false ? (
+            {loading ? (
               <Loader />
             ) : (
               <button
